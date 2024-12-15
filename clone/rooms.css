@@ -1,0 +1,684 @@
+body {
+    margin: 0;
+    font-family: "Neue Montreal", Helvetica, Arial, sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f0f0;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    width: 100%;
+}
+  
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Neue Montreal", Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0;
+    margin: 0;
+    column-gap: 1.2em;
+}
+.nav-link {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #ffcc00; 
+}
+  
+.nav-link.active {
+    font-weight: bold;
+}
+.logo {
+    width: 8rem;
+    text-decoration: inherit;
+    margin-right: 10rem;
+}
+
+.reservations {
+    display: flex;
+    color: white;
+    column-gap: 20px;
+    text-transform: uppercase;
+    align-items: center;
+    line-height: 24px;
+}
+  
+.reservations-button {
+    background-color: rgb(187, 148, 110); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding:20px 32px 20px 32px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+  
+.reservations-button:hover {
+    background-color: #d2c6bf; 
+}
+#main {
+   width: 100%;
+}
+.background {
+    display: flex;
+    top: 0px;
+    left: 0px;
+}
+.left-bg {
+    position: relative;
+    background-image: url('Somerset_2_1000x.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 50%;
+    opacity: 1;
+    filter: brightness(50%);
+}
+.instagram-content{
+    position: absolute;
+    top: 80%;
+    gap: 10px;
+    right: 90%;
+    width: 200px;
+    transform: rotate(270deg);
+    color: #FFFFFF;
+}
+
+.insta{
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.fa-instagram{
+    font-size: 1rem;
+}
+.right-bg {
+    background-color: rgb(38, 90, 91);
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    filter: brightness(95%);
+}
+.right-bg-img {
+    width: 40%; /* Adjust size as needed */
+    object-fit: cover; 
+    filter: brightness(50%); 
+    position: absolute;
+    left: 25%;
+    top:25%;
+}
+
+.header-section {
+   color: rgb(255,255,255);
+   z-index: 2; 
+   top: 40%;
+   left: 0%;
+   position: absolute;
+   text-transform: uppercase;
+}
+.sticky-side{
+    padding: .25rem .25rem 0 .25rem;
+    width: 260px;
+    position: fixed;
+    z-index: 500;
+    top: 60%;
+    transform: translateY(-50%) rotate(270deg);
+    border-width: 1px;
+    border-color: #bb946e;
+    border-style: solid;
+    left: 89.2%;
+    transform: rotate(270deg);
+    border-bottom: 0;
+}
+.sticky{
+    width: 100%;
+    background-color: #bb946e;
+    padding: 1.25rem 2rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: Neue Montreal, Helvetica, Arial, sans-serif;
+}
+h2 {
+    box-sizing: border-box;
+    font-size: 3rem;
+    line-height: 1;
+    font-family: joanna-nova, serif;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: -.025em;
+    width: 80%;
+    margin-left: 140px;
+}
+.middle-content {
+    display:flex;
+    flex-direction: column;
+    padding: 10rem 4rem 6rem 0;
+    font-family: Neue Montreal, Helvetica, Arial, sans-serif;
+    position: relative;
+}
+.text {
+    max-width: 56rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    position: relative;
+}
+.olive {
+    position: absolute; 
+    z-index: -1;
+    right: 0%;
+    mix-blend-mode: multiply;
+    opacity: 0.5;    
+    top: 5%;
+}
+
+.rooms-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pic-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    max-width: 72rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: -5.5rem;
+}
+.con {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.image {
+    height: auto;
+    position: absolute;
+}
+.textbox {
+    background-color: rgb(43, 58, 65);
+    padding: 4rem;
+    font-family: Neue Montreal, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    width: 40%;
+    position: relative;
+}
+.textbox h3 {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: joanna-nova, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.book {
+    padding: 1.25rem 1.75rem;
+    transition-duration: .15s;
+    display: inline-block;
+    background-color: rgb(187, 148, 110);
+    cursor: pointer;
+}
+.book:hover {
+    background-color: rgb(43, 58, 65);
+    border: solid 1px white;
+}
+.textbox.textbox-1, .textbox-3, .textbox-5, .textbox-7{
+    position: relative; 
+    z-index: 1;
+    margin-left: auto;
+}
+.image.image-1, .image-3, .image-5, .image-7 {
+    top: 0; 
+    left: 0; 
+    z-index: -1; 
+}
+
+.image.image-2, .image-4, .image-6{
+    top: 0; 
+    z-index: -1;
+    right: 0;
+}
+.footer-con {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #2b3a41;
+}
+.insta-con {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.insta-part {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.insta-left-part {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.insta-block-con {
+    padding-top: 100%;
+    position: relative;
+}
+
+.insta-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.insta-block-con:hover {
+    background-color: #bb946e;
+}
+
+.insta-loading {
+    width: 1.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.insta-center-part {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.insta-center {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.insta-center-image-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.insta-center-image {
+    width: 1.25rem;
+    max-width: 100%;
+}
+
+.insta-middle-con {
+    grid-column: span 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #bb946e;
+    opacity: 0.75;
+}
+
+.insta-middle-text {
+    font-family: "Joanna Nova", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.under {
+    width: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1px;
+    display: block;
+    color: #fff;
+}
+
+.insta-title-con {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1.25rem 1.75rem;
+    color: #fff;
+    text-decoration: inherit;
+    position: relative;
+}
+
+.insta-title {
+    display: block;
+}
+
+.insta-title-con:hover {
+    background-color: #fff;
+    color: #bb946e;
+}
+
+.middle-img-con {
+    z-index: -1;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    width: 80%;
+    left: 10%;
+    top: 50%;
+    position: absolute;
+    opacity: 0.25;
+}
+
+.middle-img-width {
+    padding-top: 108.3%;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.middle-img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.footer-width {
+    max-width: 1280px;
+    width: 100%;
+    opacity: 1;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo-con {
+    width: 8rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo {
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.footer-ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.footer-li {
+    position: relative;
+}
+
+.footer-a {
+    text-transform: uppercase;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.dot {
+    margin-right: 1.5rem;
+}
+
+.underline {
+    max-width: 56rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    opacity: 0.25;
+}
+
+.email-con {
+    margin-bottom: 2.5rem;
+}
+
+.enter-email {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-input {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+}
+
+.email {
+    flex-grow: 1;
+    padding: 1.25rem 4rem 1.25rem 1.25rem;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+}
+
+.email::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 100%;
+    cursor: pointer;
+    margin-right: 1rem;
+    outline: none;
+    position: absolute;
+    right: 1rem;
+    padding: 0;
+}
+
+.email-arrow::after {
+    content: '→';
+}
+
+.email-arrow:hover::after {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.address-con {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+    font-size: 1.125rem;
+}
+
+.address p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+.arrow-up-con {
+    width: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-up {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.copyright-con {
+    text-align: center;
+}
+
+.copyright {
+    text-transform: uppercase;
+}
+
+.copyright-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.copyright-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1024px){
+    .container {
+        width: 100%;
+    }
+    .nav {
+        display: none;
+    }
+    .reservations {
+        display: none;
+    }
+    .logo {
+        display: block;
+        margin-left: 42%;
+    }
+    h2 {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        font-weight: 600;
+    }
+    .instagram-content {
+        left: 0.1%;
+    }
+    .middle-content {
+        padding: 6rem 1.5rem 6rem 0;
+    }
+    .text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    .sticky{
+        background-color: #bb946e;
+        padding: 0.25rem 1rem;
+        color: #fff;
+        font-size: 0.75rem;
+        line-height: 1.3;
+        border: none;
+    }
+    .sticky-side{
+        padding: .25rem .25rem 0 .25rem;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%) rotate(270deg);
+        border-width: 1px;
+        border-color: #bb946e;
+        border-style: solid;
+        left: 84%;
+        transform: rotate(270deg);
+        border-bottom: 0;
+        height: 16px;
+    }  
+}
+@media (max-width: 768px) {
+    .right-bg-img {
+        display: none;
+    }
+    h1 {
+        margin-left: 5rem;
+    }
+    h2 {
+        width: 416px;    
+    }
+}
