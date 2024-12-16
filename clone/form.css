@@ -144,6 +144,15 @@ img {
 .form-check-label {
     color:#97a4ab;
 }
+.form-check-input:checked::before {
+    content: "✔"; /* Checkmark symbol */
+    color: white; /* Checkmark color */
+    font-size: 14px; /* Adjust font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Center checkmark inside the box */
+}
 .form-button {
     padding:0.5rem 0;
     margin-bottom: 1rem;
