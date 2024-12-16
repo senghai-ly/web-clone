@@ -108,6 +108,7 @@ img {
     border: 1px solid #dee2e6;
     border-radius: 0.375rem;
     transition: border-color 0.15s , box-shadow 0.15s ;
+    opacity: 0.5;
 }
 .form-control:focus {
     border-color:#bf9471;
